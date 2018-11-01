@@ -31,7 +31,8 @@ module.exports = {
                             status: 'success',
                             data: {
                                 token: token,
-                                expiresIn:3600
+                                expiresIn:3600,
+                                userId: user.id
                             }
                         });
                     })
@@ -73,7 +74,8 @@ module.exports = {
                      status: 'success',
                      data: {
                          token: token,
-                         expiresIn: 3600
+                         expiresIn: 3600,
+                         userId: resUser._id
                      }
                  });
             })
